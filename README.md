@@ -10,13 +10,20 @@ adherence to PCI DSS standards and enhancing threat detection capabilities.
 - <b>Ubuntu<b>
 
 <h2>Walk-through:</h2>
-UFW (Uncomplicated Firewall) isn't started by default.  Admins must enable it themselves.  Helpful commands are as follows:
-sudo ufw status  which shows if UFW is active or inactive.
-sudo ufw status verbose which shows more detail
-sudo ufw enable which starts UFW
-It's best practice to deny all incoming and outgoin traffic by default. 
-sudo ufw default deny incoming
-
+UFW (Uncomplicated Firewall) isn't started by default.  Admins must enable it themselves. <br />
+Helpful commands are as follows:<br />
+sudo ufw status  which shows if UFW is active or inactive.<br />
+sudo ufw status verbose which shows more detail<br />
+sudo ufw enable which starts UFW<br />
+It's best practice to deny all incoming and outgoin traffic by default. <br />
+sudo ufw default deny incoming to block all incoming connections<br/>
+sudo ufw default allow outgoing to allow all outgoing connections<br/>
+sudo ufw allow to open specific ports<br/>
+sudo ufw deny to close specific ports<br/>
+sudo ufw delete to delete rules<br/>
+sudo ufw disable to shut down the firewall<br/>
+<br/>
+<br/>
 <p align="center">
 Drop Zone <br/>
 Firewalld is very similar to UFW, but it is a bit more complicated and provides greater flexibility and most importantly does not disrupt services when managing firewall updates.  Firewalld uses zones to divide network interfaces.  Zones are assigned sets of rules depending on needs.
