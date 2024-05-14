@@ -1,7 +1,7 @@
 <h1>Network Security & Compliance Lab</h1>
 
  <h2>Description</h2>
-Project consists of firewall management and compliance efforts, configuring UFW and firewalld for robust network security in simulated e-commerce and DMV scenarios.  vulnerability assessments using Nmap and deployed Snort for intrusion detection, ensuring
+Project consists of firewall management and compliance efforts, configuring UFW and firewalld for robust network security in simulated e-commerce scenarios.  vulnerability assessments using Nmap and deployed Snort for intrusion detection, ensuring
 adherence to PCI DSS standards and enhancing threat detection capabilities.
 <br />
 <h2>Environments Used </h2>
